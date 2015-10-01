@@ -132,14 +132,14 @@ public class MainView extends VBox {
                 double xMax = 1000;
                 double xInc = 0.1;
                 path.getElements().add(new MoveTo(
-                        400 + 200 * Math.sin(Long.parseLong(wxval.getText()) * xMin - Long.parseLong(rxval.getText())),
-                        300 + 200 * Math.cos(Long.parseLong(wyval.getText()) * xMin - Long.parseLong(ryval.getText()))));
+                        400 + 200 * Math.sin(Float.parseFloat(wxval.getText()) * xMin - Float.parseFloat(rxval.getText())),
+                        300 + 200 * Math.cos(Float.parseFloat(wyval.getText()) * xMin - Float.parseFloat(ryval.getText()))));
                 double x = xMin;
 
                 while (x < xMax) {
                     path.getElements().add(new LineTo(
-                            400 + 200 * Math.sin(Long.parseLong(wxval.getText()) * x - Long.parseLong(rxval.getText())),
-                            300 + 200 * Math.cos(Long.parseLong(wyval.getText()) * x - Long.parseLong(ryval.getText()))));
+                            400 + 200 * Math.sin(Float.parseFloat(wxval.getText()) * x - Float.parseFloat(rxval.getText())),
+                            300 + 200 * Math.cos(Float.parseFloat(wyval.getText()) * x - Float.parseFloat(ryval.getText()))));
                     x += xInc;
                 }
                 canvas.getChildren().add(path);
