@@ -1,5 +1,5 @@
 # lissajou-figures
-Java application that displayes the different lissajou-figures based on the input parameters.
+Java application that displays different lissajou-figures based on the input parameters.
 
 You can run the application by calling 'mvn spring-boot:run'.
 
