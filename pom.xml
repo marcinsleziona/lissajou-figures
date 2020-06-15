@@ -30,7 +30,7 @@
 
         <maven-compiler-plugin-version>3.3</maven-compiler-plugin-version>
 
-        <commons-collections-version>3.2.1</commons-collections-version>
+        <commons-collections-version>3.2.2</commons-collections-version>
         <junit-version>4.12</junit-version>
         <rxjava-core-version>0.20.7</rxjava-core-version>
     </properties>
